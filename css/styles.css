@@ -1,0 +1,26 @@
+body {
+  font-family: serif;
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: end;
+  margin: 0.5em;
+}
+header img {
+  width: 26px;
+}
+nav {
+  display: none;
+  margin: 0.5em;
+}
+nav.open {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  margin: 0.5em;
+}
+footer {
+  margin: 0.5em;
+}
