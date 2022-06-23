@@ -18,9 +18,23 @@ nav.open {
   display: flex;
   flex-direction: column;
 }
+nav a {
+  text-decoration: none;
+  padding: 0.5em;
+  color: #000;
+  border-bottom: 1px #ccc solid;
+}
+nav a:first-child {
+  border-top: 1px #ccc solid;
+}
 main {
   margin: 0.5em;
 }
 footer {
   margin: 0.5em;
+}
+img:not(#menu-toggler) {
+  width: 200px;
+  display: block;
+  margin: auto;
 }
