@@ -20,7 +20,7 @@ nav.open {
 }
 nav a {
   text-decoration: none;
-  padding: 0.5em;
+  padding: 1em;
   color: #000;
   border-bottom: 1px #ccc solid;
 }
@@ -37,6 +37,12 @@ img:not(#menu-toggler, .contact-links img) {
   width: 200px;
   display: block;
   margin: auto;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #666;
 }
 .contact-links {
   display: flex;
@@ -55,12 +61,18 @@ img:not(#menu-toggler, .contact-links img) {
 .projects h2 {
   margin-bottom: 0;
 }
-.projects article:not(.projects article:last-child) {
-  border-bottom: 1px #ccc solid;
-}
 .techs {
   color: #999;
   font-style: italic;
   font-size: 0.8em;
   margin: 0;
+}
+@media screen and (min-width: 600px) {
+  header, nav, main, footer {
+    margin: 1em;
+  }
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5em;
+  }
 }
