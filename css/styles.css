@@ -8,7 +8,7 @@ header {
   margin: 0.5em;
 }
 header img {
-  width: 26px;
+  width: 30px;
 }
 nav {
   display: none;
@@ -33,8 +33,34 @@ main {
 footer {
   margin: 0.5em;
 }
-img:not(#menu-toggler) {
+img:not(#menu-toggler, .contact-links img) {
   width: 200px;
   display: block;
   margin: auto;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+}
+.contact-links img {
+  width: 60px;
+}
+.contact-links a {
+  margin-right: 1em;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.projects h2 {
+  margin-bottom: 0;
+}
+.projects article:not(.projects article:last-child) {
+  border-bottom: 1px #ccc solid;
+}
+.techs {
+  color: #999;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 0;
 }
