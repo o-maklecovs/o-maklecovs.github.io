@@ -2,9 +2,13 @@ body {
   font-family: serif;
   margin: 0;
 }
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin: 0.5em;
 }
 header img {
@@ -41,6 +45,47 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+.scene {
+  width: 30px;
+  height: 30px;
+  perspective: 100px;
+}
+@keyframes rotateCube {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(-360deg);
+  }
+}
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotateCube 8s infinite linear;
+}
+.front, .back, .top, .bottom, .left, .right {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 50%;
+}
+.front, .back {
+  background-color: #f00;
+}
+.top, .bottom {
+  background-color: #0f0;
+}
+.left, .right {
+  background-color: #00f;
+}
+.front { transform: rotateY(0deg) translateZ(15px); }
+.back { transform: rotateY(180deg) translateZ(15px); }
+.top { transform: rotateX(90deg) translateZ(15px); }
+.bottom { transform: rotateX(-90deg) translateZ(15px); }
+.left { transform: rotateY(-90deg) translateZ(15px); }
+.right { transform: rotateY(90deg) translateZ(15px); }
 .selfie {
   width: 200px;
   display: block;
@@ -103,10 +148,15 @@ a:hover:not(nav a) {
     width: 800px;
     margin: auto;
   }
+  .top-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   nav, main, footer {
     margin: 0;
   }
-  header {
+  #menu-toggler {
     display: none;
   }
   nav {
