@@ -2,49 +2,33 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>About me</title>
   </head>
   <body>
-    <div class="top-wrapper">
-      <header>
-        <div class="scene">
-          <div class="cube">
-            <div class="front"></div>
-            <div class="back"></div>
-            <div class="top"></div>
-            <div class="bottom"></div>
-            <div class="left"></div>
-            <div class="right"></div>
-          </div>
+    <main>
+      <h1>Olegs Maklecovs</h1>
+      <section class="aboutme">
+        <h2>About me</h2>
+        <div>
+          <p>Hello! My name is Olegs and I'm a Computer Science student at De Montfort University (soon-to-be graduate) and a web developer. I work mainly with JavaScript and Node but I often try to expand my knowledge by learning other languages and technologies. I have some personal experience of building web apps using Node and Express, along with academic experience with PHP and Java, among other skills.</p>
+          <p>At the moment I'm looking forward to kickstarting my career in web development. I consider myself a "forever student", even though my time at university is coming to an end I still expect to be learning in the future. This is due to there being many nuances to web development I'm not aware of yet and due to fast-changing world of web technologies.</p>
         </div>
-        <img src="img/menu.svg" alt="Menu button" id="menu-toggler">
-      </header>
-      <nav id="nav-menu">
-        <a href="index.html">About me</a>
-        <a href="projects.html">Projects</a>
-      </nav>
-    </div>
-    <main class="index-container">
-      <h1>About me</h1>
-      <section class="index-text">
-        <p>Hello! My name is Olegs and I'm a Computer Science student at De Montfort University (soon-to-be graduate) and a web developer. I work mainly with JavaScript and Node but I often try to expand my knowledge by learning other languages and technologies. I have some personal experience of building web apps using Node and Express, along with academic experience with PHP and Java, among other skills.</p>
-        <p>At the moment I'm looking forward to kickstarting my career in web development. I consider myself a "forever student", even though my time at university is coming to an end I still expect to be learning in the future. This is due to there being many nuances to web development I'm not aware of yet and due to fast-changing world of web technologies.</p>
-      </section>
-      <section class="index-image">
         <img src="img/me.jpeg" alt="Selfie of me" class="selfie">
+      </section>
+      <section class="projects">
+        <h2>My projects</h2>
+        <div>
+          <h3>myJobs</h3>
+          <p class="techs">HTML, CSS, JavaScript, Node.js, Express, Handlebars, MySQL</p>
+          <a href="https://github.com/o-maklecovs/fyp">GitHub</a>
+          <p>A clone of Indeed/Totaljobs. Users can browse, apply and save jobs. Special "employer" accounts allow to create, edit and delete jobs. This was my final year project at De Montfort University.</p>
+        </div>
       </section>
     </main>
     <footer>
-      <p>&copy; Olegs Maklecovs 2022</p>
-      <div class="contact-links">
-        <div>
-          <a href="https://www.linkedin.com/in/olegs-maklecovs-89b5a4214/"><img src="img/linkedin.svg" alt="LinkedIn"></a>
-        </div>
-        <div>
-          <a href="https://github.com/o-maklecovs"><img src="img/github.svg" alt="GitHub"></a>
-        </div>
-      </div>
+      <a href="https://www.linkedin.com/in/olegs-maklecovs-89b5a4214/"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://github.com/o-maklecovs"><img src="img/github.svg" alt="GitHub"></a>
     </footer>
     <script src="js/nav.js"></script>
   </body>
